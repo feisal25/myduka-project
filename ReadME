@@ -1,0 +1,5 @@
+    STEPS TO USE PYSCOPG2
+1. installing pyscopg2 library
+2. import the pyscopg2 package
+3. connect to the postgress database
+4. declare cursor to perform database operations
