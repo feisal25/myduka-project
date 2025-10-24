@@ -3,3 +3,7 @@
 2. import the pyscopg2 package
 3. connect to the postgress database
 4. declare cursor to perform database operations
+
+    ROUTES==> used to connect a url with a python function
+
+    Render_template functions==> used to return html files
