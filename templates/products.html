@@ -13,7 +13,7 @@
     <h1>products page</h1>
     <p>{{prod}}</p>
 
-    <table class="table">
+    <table class="table" border="2">
         <thead>
             <tr>
                 <th scope="col">id</th>
@@ -22,6 +22,16 @@
                 <th scope="col">selling price</th>
             </tr>
         </thead>
+        <tbody>
+            {% for pro in prod%}
+            <tr>
+            <td>{{pro[0]}}</td>
+            <td>{{pro[1]}}</td>
+            <td>{{pro[2]}}</td>
+            <td>{{pro[3]}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
 
     </table>
 
