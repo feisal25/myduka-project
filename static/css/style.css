@@ -1,0 +1,49 @@
+/* --- General Styles --- */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+  margin-top: 70px;
+}
+
+/* Hero Section */
+.hero-section img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* --- Card Styling --- */
+.custom-card {
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.custom-card i {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.custom-card .btn {
+  border-radius: 25px;
+  margin-top: 10px;
+}
+
+/* --- Contact Section --- */
+section ul li {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+/* --- Footer --- */
+footer {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}

@@ -105,7 +105,7 @@ def product_profit():
     
 
 
-def sales_per_product():
+def sales_per_product(): 
     querry="select products.name as p_name, sum(sales.quantity * products.selling_price) as total_sales from " \
     "products join sales on products.id = sales.pid group by(p_name);"
     curr.execute(querry)
@@ -116,15 +116,59 @@ def sales_per_product():
 # print(f'my total sales are:{mysales}')
 
 
+
+def profit_per_day():
+    query='Select  Date(s.created_at) AS sale_date, SUM((p.selling_price - p.buying_price) * s.quantity) AS daily_profit ' \
+    'FROM sales s JOIN products p ON s.pid = p.id  GROUP BY DATE(s.created_at) ORDER BY sale_date;'
+    curr.execute(query)
+    profit=curr.fetchall()
+    return profit
+
+
+def sale_per_day():
+    queery='Select Date(s.created_at) AS sale_date, SUM(p.selling_price * s.quantity) AS total_sales' \
+    ' FROM sales s JOIN products p ON s.pid = p.id  GROUP BY DATE(s.created_at) ORDER BY sale_date;'
+    curr.execute(queery)
+    sale=curr.fetchall()
+    return sale
+
+
+def insert_users(user_values):
+    query='insert into users(full_name,email,password)values(%s,%s,%s);'
+    curr.execute(query,user_values)
+    connect.commit()
+
+
         # QUERRIES
 
-#  
+  
     # select products.name as p_name ,sum((products.selling_price - products.buying_price) * sales.quantity) as profit from
     # sales join products on sales.pid = products.id group by(p_name);
     
-#        
+        
         # select products.name as p_name, sum(sales.quantity * products.selling_price) as total_sales
         # from products join sales on products.id = sales.pid group by(p_name);
+
+
+        
+# <!-- sales per day
+# <!-- SELECT 
+#     DATE(s.created_at) AS sale_date,
+#     SUM(p.selling_price * s.quantity) AS total_sales
+# FROM sales s
+# JOIN products p ON s.pid = p.id 
+# GROUP BY DATE(s.created_at)
+# ORDER BY sale_date; -->
+
+# <!-- profit -->
+# <!-- SELECT 
+#     DATE(s.created_at) AS sale_date,
+#     SUM((p.selling_price - p.buying_price) * s.quantity) AS daily_profit
+# FROM sales s
+# JOIN products p ON s.pid = p.id 
+# GROUP BY DATE(s.created_at)
+# ORDER BY sale_date; --> -->
+
    
 
 
