@@ -139,6 +139,16 @@ def insert_users(user_values):
     connect.commit()
 
 
+    # check if user exist
+def check_email(email):
+        query='select * from users where email=%s'
+        curr.execute(query,(email,))
+        data=curr.fetchone()
+        return data
+    
+print(check_email('dan@mail.com'))
+
+
         # QUERRIES
 
   

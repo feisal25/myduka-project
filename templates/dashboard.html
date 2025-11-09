@@ -45,11 +45,24 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/register">register</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">Logout</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
     <h1>dashboard page</h1>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul class=flashes>
+        {% for message in messages %}
+        <li class="list-unstyled">{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    {% block body %}{% endblock %}
 
     <div class="container mt-5">
         <div class="row">
@@ -57,7 +70,7 @@
                 <div class="card">
                     <div class="card-body shadow">
                         <h5 class="card-title">Total sales</h5>
-                        <p class="card-text">Cash</p>
+                        <p class="card-text">KES</p>
                     </div>
                 </div>
             </div>
@@ -65,7 +78,7 @@
                 <div class="card">
                     <div class="card-body shadow">
                         <h5 class="card-title">Total profit</h5>
-                        <p class="card-text">Cash</p>
+                        <p class="card-text">KES</p>
                     </div>
                 </div>
             </div>
@@ -73,7 +86,7 @@
                 <div class="card">
                     <div class="card-body shadow">
                         <h5 class="card-title">Daily Sales</h5>
-                        <p class="card-text">Cash</p>
+                        <p class="card-text">KES</p>
                     </div>
                 </div>
             </div>
@@ -81,7 +94,7 @@
                 <div class="card">
                     <div class="card-body shadow">
                         <h5 class="card-title">Daily Profit</h5>
-                        <p class="card-text">Cash</p>
+                        <p class="card-text">KES</p>
                     </div>
                 </div>
             </div>

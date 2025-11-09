@@ -47,3 +47,166 @@ footer {
   font-size: 0.9rem;
   letter-spacing: 0.5px;
 }
+
+
+.bg-light {
+  padding-top: 70px; /* space for fixed navbar */
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.btn-primary {
+  background-color: #0d6efd; /* Bootstrap blue */
+  border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0b5ed7;
+}
+
+.bg-light1 {
+  padding-top: 70px; /* space for fixed navbar */
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.btn-primary {
+  background-color: #0d6efd; /* Bootstrap blue */
+  border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0b5ed7;
+}
+
+/* ----- SALES PAGE STYLING ----- */
+.sales-page {
+  padding-top: 80px; /* offset fixed navbar */
+}
+
+.sales-page .card {
+  border-radius: 12px;
+}
+
+.sales-page .btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.sales-page .btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0b5ed7;
+}
+
+/* ---------- PRODUCTS PAGE STYLING ---------- */
+.products-page {
+  background-color: #f8f9fc;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.products-page .products-btn {
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.products-page h1 {
+  letter-spacing: 1px;
+}
+
+.products-page .modal-content {
+  border-radius: 15px;
+}
+
+.products-page table.dataTable {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.products-page table thead {
+  background-color: #007bff;
+  color: white;
+}
+
+.products-page table tbody tr:hover {
+  background-color: #e9f3ff;
+  transition: 0.3s;
+}
+
+.products-page .btn-warning,
+.products-page .btn-danger {
+  border-radius: 8px;
+}
+
+.products-page .btn-warning i,
+.products-page .btn-danger i {
+  font-size: 14px;
+}
+
+.stockpagebody {
+    background: #f8f9fa;
+    padding-top: 80px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.page-container {
+    margin-top: 30px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.page-title {
+    text-align: center;
+    color: #0d6efd;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0a58ca;
+    transform: scale(1.05);
+}
+
+table.table-style {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+table.table-style thead {
+    background-color: #0d6efd;
+    color: white;
+}
+
+table.table-style tbody tr:hover {
+    background-color: #f2f7ff;
+}
+
+.modal-style {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+
